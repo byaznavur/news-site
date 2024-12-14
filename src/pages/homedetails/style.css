@@ -1,0 +1,16 @@
+.detailsCard {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.detailsCard h2 {
+  font-size: 40px;
+}
+.detailsCard img {
+  width: 80%;
+  margin: 30px 0;
+}

@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./components/layout";
 import { lazy, Suspense } from "react";
 import Loading from "./components/loading";
+import HomeDetails from "./pages/homedetails";
 const Home = lazy(() => import("./pages/home"));
 const Business = lazy(() => import("./pages/business"));
 const Entertainment = lazy(() => import("./pages/entertainment/index"));
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
+            <Route path=":id" element={<HomeDetails />} />
             <Route path="business" element={<Business />} />
             <Route path="entertainment" element={<Entertainment />} />
             <Route path="general" element={<General />} />
